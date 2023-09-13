@@ -1,0 +1,3 @@
+﻿* A user can same room at some timespan 
+* Entry is deleted when the event is deleted but no record is retained.
+* User should not be able to navigate more the two month

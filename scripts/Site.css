@@ -1,0 +1,168 @@
+﻿* {
+    font-family: Tahoma
+}
+
+#divLoginPage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #4682B4;
+    align-content: center;
+    align-items: center;
+    vertical-align: central;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+​ #divLoginPage button {
+    font-family: 'Gill Sans MT';
+}
+
+#divLoginPage div {
+    position: relative;
+    height: 150px;
+    top: 50%;
+    margin-top: -75px;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#divLoginPage input[type="text"], input[type="password"] {
+    font-family: 'Gill Sans MT';
+}
+
+#divLoginPage td {
+    width: 200px;
+    text-align: right;
+}
+
+.globalButtons {
+    width: 100px;
+}
+
+    .globalButtons:hover {
+        -moz-box-shadow: 0px 0px 15px white;
+        -webkit-box-shadow: 0px 0px 15px white;
+        box-shadow: 0px 0px 15px white;
+    }
+
+body {
+    font-family: Tahoma;
+    font-size: small;
+    background-color: #f1f1f1;
+}
+
+#divHomeHeader {
+    text-align: center;
+    /*font-family: 'Gill Sans MT';*/
+    background-color: #4682B4;
+    height: 30px;
+    vertical-align: middle;
+    font-size: larger;
+
+    width: 100%;
+    color: #f1f1f1;
+}
+
+h3 {
+    font-family: 'Gill Sans MT';
+}
+
+#divHomeFooter {
+    clear: both;
+    z-index: 10;
+    width: 100%;
+    background-color: #4682B4;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+#divHomeMainWrapper {
+    position: absolute;
+    overflow: hidden;
+    min-width: 700px;
+    width: 1200px;
+    right: 50%;
+    margin-right: -600px;
+    background-color: white;
+}
+
+#divHomeBBCMALogo {
+    position: relative;
+    height: 65px;
+    width: 220px;
+}
+
+    #divHomeBBCMALogo img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+.HomeButtons {
+    /*font-family: 'Gill Sans MT';*/
+    width: 90px;
+}
+
+    .HomeButtons:hover {
+        -moz-box-shadow: 0px 0px 15px #a0213f;
+        -webkit-box-shadow: 0px 0px 15px #a0213f;
+        box-shadow: 0px 0px 15px #a0213f;
+    }
+
+.divHomeLeftOtherContents {
+    width: 219px;
+    margin-left: -2px;
+}
+
+#divGenericModalPopup {
+    display: none;
+    margin-left: 20px;
+}
+
+    #divGenericModalPopup td {
+        width: 100px;
+        height: 25px;
+    }
+
+.divLoading {
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.imgLoading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+}
+
+#divGenericModalPopup input[type="text"] {
+    width: 200px;
+}
+
+
+#divGenericModalPopup select {
+    width: 150px;
+}
+
+#divGenericModalPopup input[type="submit"] {
+    width: 80px;
+}
+
+    #divGenericModalPopup input[type="submit"]:hover {
+        -moz-box-shadow: 0px 0px 15px #a0213f;
+        -webkit-box-shadow: 0px 0px 15px #a0213f;
+        box-shadow: 0px 0px 15px #a0213f;
+    }
