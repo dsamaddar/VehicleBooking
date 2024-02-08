@@ -6,7 +6,8 @@ public partial class OpenExisting : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string str = Request.QueryString["data"].ToString();
-        string sessionUser = Session["curUserName"].ToString();
+        string sessionUser = Session["curUserName"].ToString().ToLower();
+
         DataSet ds = DataLayer.runQueryDataset("SELECT * FROM tblEvents WHERE id=" + str);
         txtUserName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
         lblEndTime.Text = ds.Tables[0].Rows[0]["End"].ToString();
@@ -15,7 +16,8 @@ public partial class OpenExisting : System.Web.UI.Page
         lblStartTime.Text = ds.Tables[0].Rows[0]["start"].ToString();
         lbldestination.Text = ds.Tables[0].Rows[0]["Destination"].ToString();
         lblPurpose.Text = ds.Tables[0].Rows[0]["purpose"].ToString();
-        if(sessionUser==txtUserName.Text)
+        lblSessionUser.Text = sessionUser;
+        if (sessionUser == txtUserName.Text.ToString().ToLower())
         {
             btnDelete.Enabled = true;
         }

@@ -71,6 +71,13 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Session User:
+                    </td>
+                    <td>
+                        <asp:Label ID="lblSessionUser" runat="server" Text=""></asp:Label>
+                    </td>
+                </tr>
+                <tr>
                     <td></td>
                     <td>
                         <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
